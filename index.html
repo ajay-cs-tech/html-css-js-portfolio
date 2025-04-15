@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta name="description" content="Ajay CS - AI & Data Science Engineer | ML Researcher | Full-Stack Developer">
+    <title>Ajay C S | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- Theme Toggle -->
+    
+
+    <!-- Navigation -->
     <nav id="desktop-nav">
-      <div class="logo">Ajay CS</div>
+      <div class="logo">AJ</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
+
+    <!-- Hamburger Navigation -->
     <nav id="hamburger-nav">
-      <div class="logo">Ajay CS</div>
+      <div class="logo">Ajay C S</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -29,24 +36,24 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
+
+    <!-- Profile Section -->
+    <section id="profile" class="animate">
       <div class="section__pic-container">
         <img src="./assets/profile.pic.png" alt="Ajay CS profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Ajay CS</h1>
-        <p class="section__text__p2">AI and DS Engineer.</p>
+        <h1 class="title">Ajay C S</h1>
+        <p class="section__text__p2">AI & Data Science Engineer</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/AJAYCS_main.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/AJAYCS_RESUME_MAIN.pdf')">
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -54,295 +61,171 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/ajay-cs/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/ajay-cs-tech'"
-          />
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ajay-cs/'" />
+          <img src="./assets/github.png" alt="GitHub" class="icon"
+            onclick="location.href='https://github.com/ajay-cs-tech'" />
         </div>
       </div>
     </section>
-    <section id="about">
+
+    <!-- About Section -->
+    <section id="about" class="animate">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <img src="./assets/education.png" alt="Education" class="icon" />
               <h3>Education</h3>
-              <p>B.E. Artificial Intellegince and Data Science</p>
+              <p>B.E. AI & Data Science<br>Siddaganga Institute of Technology<br></p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience" class="icon" />
+              <h3>Experience</h3>
+              <p>Present Research Intern @ University Of Nebraska-Lincoln, United States<br>Ex-Full-Stack Dev @ Milkivilla, Bengaluru</p>
             </div>
           </div>
           <div class="text-container">
-            <p>
-              Hello. I'm Ajay, 
-
-              I’m an undergraduate student at SIT Tumkur, pursuing B.E in Artificial Intelligence and Data Science.
-              
-              Constantly searching for new trends in technology and finance. 
-              I have a strong desire to learn new upcoming things. 
-              Currently learning Machine Learning and MERN Stack. 
-              
-              Open to work in all kind of fields related to Computer Science and Artificial intelligence. 
-              Have worked on various projects that directly involves Machine learning, Natural Language Processing and MERN ( MongoDB, Express.js, React, Node.js ) during the my academics.
+            <p class="highlight">
+              AI & Data Science graduate passionate about developing intelligent solutions. 
+              Currently exploring AI and while conducting research 
+              in agricultural technology at University of Nebraska-Lincoln, United States.
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
-    <section id="experience">
+
+    <!-- Experience Section -->
+    <section id="experience" class="animate">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
+      <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend and Backend Development</h2>
+            <h2 class="experience-sub-title">Research & Development</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>HTML</h3>
-                  <p>Beginner</p>
+                  <h3>Computer Vision</h3>
+                  <p>YOLO · LiDAR · Deep Learning</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>CSS</h3>
-                  <p>Beginner</p>
+                  <h3>NLP</h3>
+                  <p>BERT · TF-IDF · Dialogflow</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <h3>Cloud & DevOps</h3>
+                  <p>AWS · Netlify · Docker</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                    <h3>Node JS</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Express JS</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>MongoDB atlas</h3>
-                      <p>Basic</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>React</h3>
-                      <p>Basic</p>
-                    </div>
-                  </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Languages and Tools</h2>
+            <h2 class="experience-sub-title">Full-Stack Development</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>C++</h3>
-                  <p>Intermediate</p>
+                  <h3>Frontend</h3>
+                  <p>React · HTML5 · CSS3</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>Python</h3>
-                  <p>Basic</p>
+                  <h3>Backend</h3>
+                  <p>Node.js · Express · MongoDB</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>Git</h3>
-                  <p>Basic</p>
+                  <h3>APIs</h3>
+                  <p>REST · JWT · Webhooks</p>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
-    <section id="projects">
+
+    <!-- Projects Section -->
+    <section id="projects" class="animate">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <!-- Project 1 -->
+          <div class="details-container color-container animate">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/project-1.png" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">ebooks_webapp</h2>
+            <h2 class="experience-sub-title project-title">Agricultural Chatbot</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ajay-cs-tech/ebooks_webapp'"
-              >
-                Github
+              <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/ajay-cs-tech/chatbot'">
+                GitHub
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <!-- Project 2 -->
+          <div class="details-container color-container animate">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/project-2.png" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Moodify, daily Mood tracker built using NEXT.js and TailwindCSS</h2>
+            <h2 class="experience-sub-title project-title">Multilingual Text Categorization</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ajay-cs-tech/moodify'"
-              >
-                Github
+              <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/ajay-cs-tech/nlp-classifier'">
+                GitHub
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <!-- Project 3 -->
+          <div class="details-container color-container animate">
             <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/project-3.png" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">E-Commerce Web App</h2>
+            <h2 class="experience-sub-title project-title">Smart Inventory System</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ajay-cs-tech/ecom?tab=readme-ov-file#e-commerce-web-app'"
-              >
-                Github
+              <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/ajay-cs-tech/inventory-mgmt'">
+                GitHub
               </button>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
-    <section id="contact">
+
+    <!-- Contact Section -->
+    <section id="contact" class="animate">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:ajaycsujjini@gmail.com">ajaycsujjini@gmail.com</a></p>
+          <img src="./assets/email.png" class="icon contact-icon" />
+          <p><a href="mailto:achikkanayakanahall2@huskers.unl.edu">Email</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/ajay-cs/">LinkedIn</a></p>
+          <img src="./assets/linkedin.png" class="icon contact-icon" />
+          <p><a href="https://linkedin.com/in/ajay-cs">LinkedIn Profile</a></p>
         </div>
+        
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -354,8 +237,9 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Ajay CS. All Rights Reserved.</p>
+      <p>Copyright © 2025 Ajay CS. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

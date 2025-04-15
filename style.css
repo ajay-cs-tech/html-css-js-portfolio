@@ -430,3 +430,54 @@ footer {
 footer p {
   text-align: center;
 }
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #4a90e2;
+  --card-bg: #f8f9fa;
+  --border-color: #e0e0e0;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --accent-color: #6aa6ff;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+}
+
+/* Add these new styles */
+.highlight {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.project-img {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+}
+
+.color-container:hover .project-img {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Updated experience cards */
+.details-container {
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 1rem;
+  transition: transform 0.3s;
+}
+
+.details-container:hover {
+  transform: scale(1.02);
+}
